@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"reflect"
 )
-
+func aa(a []int) {
+	a[0] = 1
+}
 func main() {
 	//创建一个空的map
 	s := make([]string, 3)
@@ -35,5 +37,8 @@ func main() {
 	q := make([][]int, 3)
 
 	fmt.Println(q)
-
+    bb := []int {111,2,3}
+    fmt.Println(bb)
+	aa(bb)
+    fmt.Println(bb)
 }
